@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./CSS/Eliminadordelinks.css" />
+    <link rel="stylesheet" href="./CSS/tabla.css" />
+</head>
+<body align="center">
+    <div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="es" dir="ltr">
+        <div class="mw-parser-output">
+            
+            <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading">
+             
+            </div>
+            <table>
+                <tbody>
+                    <tr><img style="margin-right:10px; width:40% ;height:40%;"id="imagen" src="data:image/jpeg;base64,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" /> </tr>
+                    <tr><iframe src="https://www.youtube.com/embed/eFgSL_CHYwg?autoplay=1&mute=1&controls=1" onload="this.scrollIntoview()" width="500" height="300" ></iframe> </tr> 
+                </tbody>
+            </table>
+            <a style="color:firebrick" href="./HTMLPage1.html"><h1>Pagina principal</h1></a>
+            <h3><span id="Palmar.C3.A9s_oficial"></span><span class="mw-headline" id="Palmarés_oficial"> Palmares de Cristiano Ronaldo</h3>
+            <table align="center"  cellpadding="3" cellspacing="0" border="1" width="100%">
+
+                <tbody>
+                    <tr  >
+                        <th width="9%" align="center" rowspan="2" colspan="2">
+                            Equipo(s)
+                        </th>
+                        <th width="28%" colspan="4">
+                            Nacionales
+                        </th>
+                        <th width="7%" align="center" rowspan="2">
+                            Subtotal
+                        </th>
+                        <th width="14%" colspan="3">
+                            Continentales
+                        </th>
+                        <th width="14%" colspan="2">
+                            Mundiales
+                        </th>
+                        <th width="7%" align="center" rowspan="2">
+                            Subtotal
+                        </th>
+                        <th width="7%" align="center" rowspan="2">
+                            Total
+                        </th>
+                    </tr>
+                    <tr align="center"  >
+                        <td width="7%"><small><b><abbr title="Liga nacional">Liga</abbr></b></small></td>
+                        <td width="7%"><small><b><abbr title="Copa nacional">Copa</abbr></b></small></td>
+                        <td width="7%"><small><b><abbr title="Copa de la liga nacional">Otra Copa</abbr></b></small></td>
+                        <td width="7%"><small><b><abbr title="Supercopa nacional">Supercopa</abbr></b></small></td>
+                        <td width="9%"><small><b><abbr title="Liga de Campeones / Eurocopa">C1</abbr></b></small></td>
+                        <td width="9%"><small><b><abbr title="Liga Europa / Liga de Naciones">C2</abbr></b></small></td>
+                        <td width="9%"><small><b><abbr title="Supercopa de la UEFA">S1</abbr> </b></small></td>
+                        <td width="8%"><small><b><abbr title="Copa Mundial / Mundial de Clubes">M1</abbr></b></small></td>
+                        <td width="7%">
+                            <small>
+                                <b><abbr title="Juegos Olímpicos / Copa FIFA Confederaciones">M2</abbr></b>
+                            </small>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <small><span class="flagicon"><img alt="Bandera de Portugal" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/20px-Flag_of_Portugal.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/30px-Flag_of_Portugal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/40px-Flag_of_Portugal.svg.png 2x" data-file-width="600" data-file-height="400"></span></small>
+                        </td>
+                        <td align="center">
+                            <b><span style="white-space:nowrap"><a href="/wiki/Sporting_de_Lisboa" title="Sporting de Lisboa">Sporting</a></span></b>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Supercopa_Portugal_2002" title="Supercopa Portugal 2002"><img alt="Icon Trophy Portuguese Super Cup Cândido de Oliveira (Supertaça Cândido de Oliveira).svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Icon_Trophy_Portuguese_Super_Cup_C%C3%A2ndido_de_Oliveira_%28Superta%C3%A7a_C%C3%A2ndido_de_Oliveira%29.svg/20px-Icon_Trophy_Portuguese_Super_Cup_C%C3%A2ndido_de_Oliveira_%28Superta%C3%A7a_C%C3%A2ndido_de_Oliveira%29.svg.png" decoding="async" width="20" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Icon_Trophy_Portuguese_Super_Cup_C%C3%A2ndido_de_Oliveira_%28Superta%C3%A7a_C%C3%A2ndido_de_Oliveira%29.svg/30px-Icon_Trophy_Portuguese_Super_Cup_C%C3%A2ndido_de_Oliveira_%28Superta%C3%A7a_C%C3%A2ndido_de_Oliveira%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Icon_Trophy_Portuguese_Super_Cup_C%C3%A2ndido_de_Oliveira_%28Superta%C3%A7a_C%C3%A2ndido_de_Oliveira%29.svg/40px-Icon_Trophy_Portuguese_Super_Cup_C%C3%A2ndido_de_Oliveira_%28Superta%C3%A7a_C%C3%A2ndido_de_Oliveira%29.svg.png 2x" data-file-width="28" data-file-height="50"></a>
+                            </p>
+                        </td>
+                        <td >
+                            <b>1</b>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td rowspan="4"  align="center">
+                            <i>No compite a nivel de clubes</i>
+                        </td>
+                        <td ><b>-</b></td>
+                        <td >
+                            <b>1</b>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <small><span class="flagicon"><a href="/wiki/Archivo:Flag_of_England.svg" class="image" title="Bandera de Inglaterra"><img alt="Bandera de Inglaterra" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/20px-Flag_of_England.svg.png" decoding="async" width="20" height="12" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/30px-Flag_of_England.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/40px-Flag_of_England.svg.png 2x" data-file-width="800" data-file-height="480"></a></span></small>
+                        </td>
+                        <td align="center">
+                            <b><span ><a href="/wiki/Manchester_United_Football_Club" title="Manchester United Football Club">Manchester United</a></span></b>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Premier_League_2006-07" title="Premier League 2006-07"><img alt="Premier league trophy icon.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/28px-Premier_league_trophy_icon.png" decoding="async" width="28" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/42px-Premier_league_trophy_icon.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/56px-Premier_league_trophy_icon.png 2x" data-file-width="362" data-file-height="453"></a>
+                                <a href="/wiki/Premier_League_2007-08" title="Premier League 2007-08"><img alt="Premier league trophy icon.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/28px-Premier_league_trophy_icon.png" decoding="async" width="28" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/42px-Premier_league_trophy_icon.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/56px-Premier_league_trophy_icon.png 2x" data-file-width="362" data-file-height="453"></a>
+                                <a href="/wiki/Premier_League_2008-09" title="Premier League 2008-09"><img alt="Premier league trophy icon.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/28px-Premier_league_trophy_icon.png" decoding="async" width="28" height="35" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/42px-Premier_league_trophy_icon.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Premier_league_trophy_icon.png/56px-Premier_league_trophy_icon.png 2x" data-file-width="362" data-file-height="453"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/FA_Cup_2003-04" title="FA Cup 2003-04"><img alt="FA Cup.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/FA_Cup.png/26px-FA_Cup.png" decoding="async" width="26" height="38" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/FA_Cup.png/39px-FA_Cup.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/FA_Cup.png/52px-FA_Cup.png 2x" data-file-width="290" data-file-height="429"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Copa_de_la_Liga_de_Inglaterra_2005-06" title="Copa de la Liga de Inglaterra 2005-06"><img alt="Carling.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carling.png/28px-Carling.png" decoding="async" width="28" height="26" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carling.png/42px-Carling.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carling.png/56px-Carling.png 2x" data-file-width="385" data-file-height="355"></a>
+                                <a href="/wiki/Copa_de_la_Liga_de_Inglaterra_2008-09" title="Copa de la Liga de Inglaterra 2008-09"><img alt="Carling.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carling.png/28px-Carling.png" decoding="async" width="28" height="26" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carling.png/42px-Carling.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Carling.png/56px-Carling.png 2x" data-file-width="385" data-file-height="355"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Community_Shield_2007" title="Community Shield 2007"><img alt="CommunityShield.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/CommunityShield.png/25px-CommunityShield.png" decoding="async" width="25" height="25" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/CommunityShield.png/38px-CommunityShield.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/CommunityShield.png/50px-CommunityShield.png 2x" data-file-width="352" data-file-height="346"></a>
+                                <a href="/wiki/Community_Shield_2008" title="Community Shield 2008"><img alt="CommunityShield.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/CommunityShield.png/25px-CommunityShield.png" decoding="async" width="25" height="25" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/CommunityShield.png/38px-CommunityShield.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/CommunityShield.png/50px-CommunityShield.png 2x" data-file-width="352" data-file-height="346"></a>
+                            </p>
+                        </td>
+                        <td >
+                            <b>8</b>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Liga_de_Campeones_de_la_UEFA_2007-08" title="Liga de Campeones de la UEFA 2007-08"><img alt="Coppa Campioni.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/24px-Coppa_Campioni.svg.png" decoding="async" width="24" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/36px-Coppa_Campioni.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/48px-Coppa_Campioni.svg.png 2x" data-file-width="285" data-file-height="426"></a>
+                            </p>
+                        </td>
+                        <td  align="center">
+                            <i>No disputó</i>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Copa_Mundial_de_Clubes_de_la_FIFA_2008" title="Copa Mundial de Clubes de la FIFA 2008"><img alt="Coppa Del Mondo per Club.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/12px-Coppa_Del_Mondo_per_Club.png" decoding="async" width="12" height="31" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/18px-Coppa_Del_Mondo_per_Club.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/24px-Coppa_Del_Mondo_per_Club.png 2x" data-file-width="128" data-file-height="334"></a>
+                            </p>
+                        </td>
+                        <td ><b>2</b></td>
+                        <td >
+                            <b>10</b>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <small><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Spain.svg" class="image" title="Bandera de España"><img alt="Bandera de España" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/20px-Flag_of_Spain.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/30px-Flag_of_Spain.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/40px-Flag_of_Spain.svg.png 2x" data-file-width="750" data-file-height="500"></a></span></small>
+                        </td>
+                        <td align="center">
+                            <b><span ><a href="/wiki/Real_Madrid_Club_de_F%C3%BAtbol" title="Real Madrid Club de Fútbol">Real Madrid</a></span></b>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Primera_Divisi%C3%B3n_de_Espa%C3%B1a_2011-12" title="Primera División de España 2011-12"><img alt="Liga trophy (adjusted).png" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liga_trophy_%28adjusted%29.png/30px-Liga_trophy_%28adjusted%29.png" decoding="async" width="30" height="39" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liga_trophy_%28adjusted%29.png/45px-Liga_trophy_%28adjusted%29.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liga_trophy_%28adjusted%29.png/60px-Liga_trophy_%28adjusted%29.png 2x" data-file-width="280" data-file-height="360"></a>
+                                <a href="/wiki/Primera_Divisi%C3%B3n_de_Espa%C3%B1a_2016-17" title="Primera División de España 2016-17"><img alt="Liga trophy (adjusted).png" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liga_trophy_%28adjusted%29.png/30px-Liga_trophy_%28adjusted%29.png" decoding="async" width="30" height="39" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liga_trophy_%28adjusted%29.png/45px-Liga_trophy_%28adjusted%29.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Liga_trophy_%28adjusted%29.png/60px-Liga_trophy_%28adjusted%29.png 2x" data-file-width="280" data-file-height="360"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Copa_del_Rey_de_f%C3%BAtbol_2010-11" title="Copa del Rey de fútbol 2010-11"><img alt="Copa del Rey (adjusted).png" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Copa_del_Rey_%28adjusted%29.png/24px-Copa_del_Rey_%28adjusted%29.png" decoding="async" width="24" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Copa_del_Rey_%28adjusted%29.png/36px-Copa_del_Rey_%28adjusted%29.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Copa_del_Rey_%28adjusted%29.png/48px-Copa_del_Rey_%28adjusted%29.png 2x" data-file-width="271" data-file-height="453"></a>
+                                <a href="/wiki/Copa_del_Rey_de_f%C3%BAtbol_2013-14" title="Copa del Rey de fútbol 2013-14"><img alt="Copa del Rey (adjusted).png" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Copa_del_Rey_%28adjusted%29.png/24px-Copa_del_Rey_%28adjusted%29.png" decoding="async" width="24" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Copa_del_Rey_%28adjusted%29.png/36px-Copa_del_Rey_%28adjusted%29.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Copa_del_Rey_%28adjusted%29.png/48px-Copa_del_Rey_%28adjusted%29.png 2x" data-file-width="271" data-file-height="453"></a>
+                            </p>
+                        </td>
+                        <td align="center">
+                            <i>No compite</i>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Supercopa_de_Espa%C3%B1a_de_F%C3%BAtbol_2012" title="Supercopa de España de Fútbol 2012"><img alt="RFEFSCE2.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/RFEFSCE2.png/20px-RFEFSCE2.png" decoding="async" width="20" height="33" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/RFEFSCE2.png/30px-RFEFSCE2.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/RFEFSCE2.png/40px-RFEFSCE2.png 2x" data-file-width="212" data-file-height="354"></a>
+                                <a href="/wiki/Supercopa_de_Espa%C3%B1a_de_F%C3%BAtbol_2017" title="Supercopa de España de Fútbol 2017"><img alt="RFEFSCE2.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/RFEFSCE2.png/20px-RFEFSCE2.png" decoding="async" width="20" height="33" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/86/RFEFSCE2.png/30px-RFEFSCE2.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/86/RFEFSCE2.png/40px-RFEFSCE2.png 2x" data-file-width="212" data-file-height="354"></a>
+                            </p>
+                        </td>
+                        <td >
+                            <b>6</b>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Liga_de_Campeones_de_la_UEFA_2013-14" title="Liga de Campeones de la UEFA 2013-14"><img alt="Coppa Campioni.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/24px-Coppa_Campioni.svg.png" decoding="async" width="24" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/36px-Coppa_Campioni.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/48px-Coppa_Campioni.svg.png 2x" data-file-width="285" data-file-height="426"></a>
+                                <a href="/wiki/Liga_de_Campeones_de_la_UEFA_2015-16" title="Liga de Campeones de la UEFA 2015-16"><img alt="Coppa Campioni.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/24px-Coppa_Campioni.svg.png" decoding="async" width="24" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/36px-Coppa_Campioni.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/48px-Coppa_Campioni.svg.png 2x" data-file-width="285" data-file-height="426"></a>
+                                <a href="/wiki/Liga_de_Campeones_de_la_UEFA_2016-17" title="Liga de Campeones de la UEFA 2016-17"><img alt="Coppa Campioni.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/24px-Coppa_Campioni.svg.png" decoding="async" width="24" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/36px-Coppa_Campioni.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/48px-Coppa_Campioni.svg.png 2x" data-file-width="285" data-file-height="426"></a>
+                                <a href="/wiki/Liga_de_Campeones_de_la_UEFA_2017-18" title="Liga de Campeones de la UEFA 2017-18"><img alt="Coppa Campioni.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/24px-Coppa_Campioni.svg.png" decoding="async" width="24" height="36" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/36px-Coppa_Campioni.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/48px-Coppa_Campioni.svg.png 2x" data-file-width="285" data-file-height="426"></a>
+                            </p>
+                        </td>
+                        <td  align="center">
+                            <i>No disputó</i>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Supercopa_de_Europa_2014" title="Supercopa de Europa 2014"><img alt="Supercoppa UEFA.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/15px-Supercoppa_UEFA.svg.png" decoding="async" width="15" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/23px-Supercoppa_UEFA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/30px-Supercoppa_UEFA.svg.png 2x" data-file-width="375" data-file-height="795"></a>
+                                <a href="/wiki/Supercopa_de_Europa_2016" title="Supercopa de Europa 2016"><img alt="Supercoppa UEFA.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/15px-Supercoppa_UEFA.svg.png" decoding="async" width="15" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/23px-Supercoppa_UEFA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/30px-Supercoppa_UEFA.svg.png 2x" data-file-width="375" data-file-height="795"></a>
+                                <a href="/wiki/Supercopa_de_Europa_2017" title="Supercopa de Europa 2017"><img alt="Supercoppa UEFA.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/15px-Supercoppa_UEFA.svg.png" decoding="async" width="15" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/23px-Supercoppa_UEFA.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Supercoppa_UEFA.svg/30px-Supercoppa_UEFA.svg.png 2x" data-file-width="375" data-file-height="795"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Copa_Mundial_de_Clubes_de_la_FIFA_2014" title="Copa Mundial de Clubes de la FIFA 2014"><img alt="Coppa Del Mondo per Club.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/12px-Coppa_Del_Mondo_per_Club.png" decoding="async" width="12" height="31" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/18px-Coppa_Del_Mondo_per_Club.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/24px-Coppa_Del_Mondo_per_Club.png 2x" data-file-width="128" data-file-height="334"></a>
+                                <a href="/wiki/Copa_Mundial_de_Clubes_de_la_FIFA_2016" title="Copa Mundial de Clubes de la FIFA 2016"><img alt="Coppa Del Mondo per Club.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/12px-Coppa_Del_Mondo_per_Club.png" decoding="async" width="12" height="31" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/18px-Coppa_Del_Mondo_per_Club.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/24px-Coppa_Del_Mondo_per_Club.png 2x" data-file-width="128" data-file-height="334"></a>
+                                <a href="/wiki/Copa_Mundial_de_Clubes_de_la_FIFA_2017" title="Copa Mundial de Clubes de la FIFA 2017"><img alt="Coppa Del Mondo per Club.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/12px-Coppa_Del_Mondo_per_Club.png" decoding="async" width="12" height="31" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/18px-Coppa_Del_Mondo_per_Club.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Coppa_Del_Mondo_per_Club.png/24px-Coppa_Del_Mondo_per_Club.png 2x" data-file-width="128" data-file-height="334"></a>
+                            </p>
+                        </td>
+                        <td ><b>10</b></td>
+                        <td >
+                            <b>16</b>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <small><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Italy.svg" class="image" title="Bandera de Italia"><img alt="Bandera de Italia" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/20px-Flag_of_Italy.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/30px-Flag_of_Italy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/40px-Flag_of_Italy.svg.png 2x" data-file-width="1500" data-file-height="1000"></a></span></small>
+                        </td>
+                        <td align="center">
+                            <b><span><a href="/wiki/Juventus_Football_Club" class="mw-redirect" title="Juventus Football Club">Juventus</a></span></b>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Serie_A_(Italia)_2018-19" title="Serie A (Italia) 2018-19"><img alt="Italy-Serie-A-Cup.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italy-Serie-A-Cup.png/80px-Italy-Serie-A-Cup.png" decoding="async" width="80" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italy-Serie-A-Cup.png/120px-Italy-Serie-A-Cup.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italy-Serie-A-Cup.png/160px-Italy-Serie-A-Cup.png 2x" data-file-width="1200" data-file-height="600"></a>
+                                <a href="/wiki/Serie_A_(Italia)_2019-20" title="Serie A (Italia) 2019-20"><img alt="Italy-Serie-A-Cup.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italy-Serie-A-Cup.png/80px-Italy-Serie-A-Cup.png" decoding="async" width="80" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italy-Serie-A-Cup.png/120px-Italy-Serie-A-Cup.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italy-Serie-A-Cup.png/160px-Italy-Serie-A-Cup.png 2x" data-file-width="1200" data-file-height="600"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Copa_Italia_2020-21" title="Copa Italia 2020-21"><img alt="Coppa Italia (Italy Cup).svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/06/Coppa_Italia_%28Italy_Cup%29.svg/20px-Coppa_Italia_%28Italy_Cup%29.svg.png" decoding="async" width="20" height="43" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/06/Coppa_Italia_%28Italy_Cup%29.svg/30px-Coppa_Italia_%28Italy_Cup%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/06/Coppa_Italia_%28Italy_Cup%29.svg/40px-Coppa_Italia_%28Italy_Cup%29.svg.png 2x" data-file-width="23" data-file-height="50"></a>
+                            </p>
+                        </td>
+                        <td align="center">
+                            <i>No compite</i>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Supercopa_de_Italia_2018" title="Supercopa de Italia 2018"><img alt="Supercoppa Italiana.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Supercoppa_Italiana.svg/15px-Supercoppa_Italiana.svg.png" decoding="async" width="15" height="37" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Supercoppa_Italiana.svg/23px-Supercoppa_Italiana.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Supercoppa_Italiana.svg/30px-Supercoppa_Italiana.svg.png 2x" data-file-width="325" data-file-height="794"></a>
+                                <a href="/wiki/Supercopa_de_Italia_2020" title="Supercopa de Italia 2020"><img alt="Supercoppa Italiana.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Supercoppa_Italiana.svg/15px-Supercoppa_Italiana.svg.png" decoding="async" width="15" height="37" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Supercoppa_Italiana.svg/23px-Supercoppa_Italiana.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Supercoppa_Italiana.svg/30px-Supercoppa_Italiana.svg.png 2x" data-file-width="325" data-file-height="794"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <b>5</b>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td align="center">
+                            <i>No disputó</i>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td ><b>-</b></td>
+                        <td >
+                            <b>5</b>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <small><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Portugal.svg" class="image" title="Bandera de Portugal"><img alt="Bandera de Portugal" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/20px-Flag_of_Portugal.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/30px-Flag_of_Portugal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/40px-Flag_of_Portugal.svg.png 2x" data-file-width="600" data-file-height="400"></a></span></small>
+                        </td>
+                        <td align="center">
+                            <b><a href="/wiki/Selecci%C3%B3n_de_f%C3%BAtbol_de_Portugal" title="Selección de fútbol de Portugal">Selección Portuguesa</a></b>
+                        </td>
+                        <td colspan="5" align="center">
+                            <i>No compite a nivel nacional</i>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Eurocopa_2016" title="Eurocopa 2016"><img alt="UEFA European Cup.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/UEFA_European_Cup.svg/20px-UEFA_European_Cup.svg.png" decoding="async" width="20" height="42" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ee/UEFA_European_Cup.svg/30px-UEFA_European_Cup.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ee/UEFA_European_Cup.svg/40px-UEFA_European_Cup.svg.png 2x" data-file-width="250" data-file-height="530"></a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Final_Four_de_la_Liga_de_Naciones_de_la_UEFA_2018-19" title="Final Four de la Liga de Naciones de la UEFA 2018-19"><img alt="UEFA Nations League Cup.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/UEFA_Nations_League_Cup.svg/18px-UEFA_Nations_League_Cup.svg.png" decoding="async" width="18" height="49" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bf/UEFA_Nations_League_Cup.svg/27px-UEFA_Nations_League_Cup.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bf/UEFA_Nations_League_Cup.svg/36px-UEFA_Nations_League_Cup.svg.png 2x" data-file-width="512" data-file-height="1393"></a>
+                            </p>
+                        </td>
+                        <td align="center">
+                            <i>No compite a nivel de selección</i>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/wiki/Torneo_Esperanzas_de_Toulon_de_2003" title="Torneo Esperanzas de Toulon de 2003"><img alt="Toulon Tournament trophy icon.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Toulon_Tournament_trophy_icon.svg/18px-Toulon_Tournament_trophy_icon.svg.png" decoding="async" width="18" height="47" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Toulon_Tournament_trophy_icon.svg/27px-Toulon_Tournament_trophy_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Toulon_Tournament_trophy_icon.svg/36px-Toulon_Tournament_trophy_icon.svg.png 2x" data-file-width="150" data-file-height="391"></a>
+                            </p>
+                        </td>
+                        <td><b>3</b></td>
+                        <td>
+                            <b>3</b>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <b>Total</b>
+                        </td>
+                        <td><b>7</b></td>
+                        <td><b>4</b></td>
+                        <td><b>2</b></td>
+                        <td><b>7</b></td>
+                        <td><b>20</b></td>
+                        <td><b>6</b></td>
+                        <td><b>1</b></td>
+                        <td><b>3</b></td>
+                        <td><b>4</b></td>
+                        <td><b>1</b></td>
+                        <td><b>15</b></td>
+                        <td>
+                            <b>35</b>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><span id="Resumen_seg.C3.BAn_posiciones_obtenidas"></span><span class="mw-headline" id="Resumen_según_posiciones_obtenidas">Resumen de su carrera</span></span></h3>
+            <table align="center" cellpadding="3" cellspacing="0" border="1" >
+
+                <tbody>
+                    <tr >
+                        <th>Club</th>
+                        <th width="70">Temporada</th>
+                        <th width="70"><a href="/wiki/Liga_(deporte)" class="mw-redirect" title="Liga (deporte)">Liga</a></th>
+                        <th width="70"><a href="/wiki/Copa_nacional_de_f%C3%BAtbol" title="Copa nacional de fútbol">Copa</a></th>
+                        <th width="70"><a href="/wiki/Copa_de_la_Liga" title="Copa de la Liga">Copa de la Liga</a></th>
+                        <th width="70"><a href="/wiki/Liga_de_Campeones_de_la_UEFA" title="Liga de Campeones de la UEFA">Liga de Campeones de la UEFA</a></th>
+                        <th width="70"><a href="/wiki/Supercopa" title="Supercopa">Supercopa</a></th>
+                        <th width="70"><a href="/wiki/Supercopa_de_Europa" class="mw-redirect" title="Supercopa de Europa">Supercopa de Europa</a></th>
+                        <th width="70">
+                            <a href="/wiki/Copa_Mundial_de_Clubes_de_la_FIFA" title="Copa Mundial de Clubes de la FIFA">Mundial de Clubes</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1">
+                            <b><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Portugal.svg" class="image" title="Bandera de Portugal"><img alt="Bandera de Portugal" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/20px-Flag_of_Portugal.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/30px-Flag_of_Portugal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/40px-Flag_of_Portugal.svg.png 2x" data-file-width="600" data-file-height="400"></a></span> <a href="/wiki/Sporting_de_Lisboa" title="Sporting de Lisboa">Sporting C. P.</a></b>
+                        </td>
+                        <th >
+                            2002-03
+                        </th>
+                        <td>3.º</td>
+                        <td>1/4</td>
+                        <td>-</td>
+                        <td><a href="/wiki/Copa_de_la_UEFA_2002-03" title="Copa de la UEFA 2002-03">1.ª R</a></td>
+                        <td>1º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">
+                            <b><span class="flagicon"><a href="/wiki/Archivo:Flag_of_England.svg" class="image" title="Bandera de Inglaterra"><img alt="Bandera de Inglaterra" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/20px-Flag_of_England.svg.png" decoding="async" width="20" height="12" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/30px-Flag_of_England.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/40px-Flag_of_England.svg.png 2x" data-file-width="800" data-file-height="480"></a></span> <a href="/wiki/Manchester_United_Football_Club" title="Manchester United Football Club">Manchester United F. C.</a></b>
+                        </td>
+                        <th>
+                            2003-04
+                        </th>
+                        <td>3.º</td>
+                        <td>1º</td>
+                        <td>1/8</td>
+                        <td>1/8</td>
+                        <td>1º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2004-05
+                        </th>
+                        <td>3.º</td>
+                        <td>2.º</td>
+                        <td>1/2</td>
+                        <td>1/8</td>
+                        <td>2.º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2005-06
+                        </th>
+                        <td>2.º</td>
+                        <td>1/8</td>
+                        <td>1º</td>
+                        <td>FG</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2006-07
+                        </th>
+                        <td>1º</td>
+                        <td>1/2</td>
+                        <td>1/8</td>
+                        <td>1/2</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2007-08
+                        </th>
+                        <td>1º</td>
+                        <td>1/4</td>
+                        <td>1/16</td>
+                        <td>1º</td>
+                        <td>1º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2008-09
+                        </th>
+                        <td>1º</td>
+                        <td>1/2</td>
+                        <td>1º</td>
+                        <td>2.º</td>
+                        <td>1º</td>
+                        <td>2.º</td>
+                        <td>
+                            1º
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="9">
+                            <b><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Spain.svg" class="image" title="Bandera de España"><img alt="Bandera de España" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/20px-Flag_of_Spain.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/30px-Flag_of_Spain.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/40px-Flag_of_Spain.svg.png 2x" data-file-width="750" data-file-height="500"></a></span> <a href="/wiki/Real_Madrid_Club_de_F%C3%BAtbol" title="Real Madrid Club de Fútbol">Real Madrid C. F.</a></b>
+                        </td>
+                        <th>
+                            2009-10
+                        </th>
+                        <td>2.º</td>
+                        <td>1/16</td>
+                        <td>-</td>
+                        <td>1/8</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2010-11
+                        </th>
+                        <td>2.º</td>
+                        <td>1º</td>
+                        <td>-</td>
+                        <td>1/2</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2011-12
+                        </th>
+                        <td>1º</td>
+                        <td>1/4</td>
+                        <td>-</td>
+                        <td>1/2</td>
+                        <td>2.º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2012-13
+                        </th>
+                        <td >2.º</td>
+                        <td >2.º</td>
+                        <td>-</td>
+                        <td >1/2</td>
+                        <td >1º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2013-14
+                        </th>
+                        <td >3.º</td>
+                        <td >1º</td>
+                        <td>-</td>
+                        <td >1º</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2014-15
+                        </th>
+                        <td >2.º</td>
+                        <td>1/8</td>
+                        <td>-</td>
+                        <td >1/2</td>
+                        <td >2.º</td>
+                        <td >1º</td>
+                        <td >
+                            1º
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2015-16
+                        </th>
+                        <td >2.º</td>
+                        <td>1/16</td>
+                        <td>-</td>
+                        <td>1º</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            2016-17
+                        </th>
+                        <td >1º</td>
+                        <td>1/4</td>
+                        <td>-</td>
+                        <td>1º</td>
+                        <td>-</td>
+                        <td >1º</td>
+                        <td >
+                            1º
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2017-18
+                        </th>
+                        <td >3.º</td>
+                        <td>1/4</td>
+                        <td>-</td>
+                        <td >1º</td>
+                        <td >1º</td>
+                        <td> 1º</td>
+                        <td >
+                            1º
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">
+                            <b><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Italy.svg" class="image" title="Bandera de Italia"><img alt="Bandera de Italia" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/20px-Flag_of_Italy.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/30px-Flag_of_Italy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/40px-Flag_of_Italy.svg.png 2x" data-file-width="1500" data-file-height="1000"></a></span> <a href="/wiki/Juventus_de_Tur%C3%ADn" title="Juventus de Turín">Juventus F. C.</a></b>
+                        </td>
+                        <th >
+                            2018-19
+                        </th>
+                        <td >1º</td>
+                        <td>1/4</td>
+                        <td>-</td>
+                        <td>1/4</td>
+                        <td >1º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2019-20
+                        </th>
+                        <td >1º</td>
+                        <td >2.º</td>
+                        <td>-</td>
+                        <td>1/8</td>
+                        <td >2º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <th >
+                            2020-21
+                        </th>
+                        <td>4.º</td>
+                        <td >1.º</td>
+                        <td>-</td>
+                        <td>1/8</td>
+                        <td >1º</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="1">
+                            <b><span class="flagicon"><a href="/wiki/Archivo:Flag_of_England.svg" class="image" title="Bandera de Inglaterra"><img alt="Bandera de Inglaterra" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/20px-Flag_of_England.svg.png" decoding="async" width="20" height="12" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/30px-Flag_of_England.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/40px-Flag_of_England.svg.png 2x" data-file-width="800" data-file-height="480"></a></span> <a href="/wiki/Manchester_United_Football_Club" title="Manchester United Football Club">Manchester United F. C.</a></b>
+                        </td>
+                        <th >
+                            2021-22
+                        </th>
+                        <td>6.º</td>
+                        <td>1/16</td>
+                        <td>1/16</td>
+                        <td>1/8</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    <tr >
+                        <th>Club</th>
+                        <th width="70">Temporada</th>
+                        <th width="70"><a href="/wiki/Liga_(deporte)" class="mw-redirect" title="Liga (deporte)">Liga</a></th>
+                        <th width="70"><a href="/wiki/Copa_nacional_de_f%C3%BAtbol" title="Copa nacional de fútbol">Copa</a></th>
+                        <th width="70">N/D</th>
+                        <th width="70"><a href="/wiki/Liga_de_Campeones_de_la_AFC" title="Liga de Campeones de la AFC">Liga de Campeones de la AFC</a></th>
+                        <th width="70"><a href="/wiki/Supercopa" title="Supercopa">Supercopa</a></th>
+                        <th width="70">N/D</th>
+                        <th width="70">
+                            <a href="/wiki/Copa_Mundial_de_Clubes_de_la_FIFA" title="Copa Mundial de Clubes de la FIFA">Mundial de Clubes</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="1">
+                            <b><span class="flagicon"><a href="/wiki/Archivo:Flag_of_Saudi_Arabia.svg" class="image" title="Bandera de Arabia Saudita"><img alt="Bandera de Arabia Saudita" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/20px-Flag_of_Saudi_Arabia.svg.png" decoding="async" width="20" height="13" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/30px-Flag_of_Saudi_Arabia.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/40px-Flag_of_Saudi_Arabia.svg.png 2x" data-file-width="900" data-file-height="600"></a></span> <a href="/wiki/Al-Nassr_Football_Club" title="Al-Nassr Football Club">Al-Nassr F. C.</a></b>
+                        </td>
+                        <th >
+                            2022-23
+                        </th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td >1/2</td>
+                        <td>-</td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+          
+</body>
+</html>
