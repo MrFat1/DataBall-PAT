@@ -23,16 +23,20 @@
             <fieldset>
                 <strong>
                     <label for="Nombre" class="col-sm-1"> Nombre: </label>
-                    <input field="*{nombre}" type="text" id="Nombre" name="nombre" class="col-sm-7" /><br /><br />
+                    <input field="*{nombre}" type="text" id="Nombre" name="nombre" required class="col-sm-7" /><br /><br />
                     <label for="surname" class="col-sm-1"> Apellidos: </label>
-                    <input field="*{surname}"type="text" class="col-sm-6" id="surname" name="surname" /><br /><br />
-                    <label style="margin-left:340px;" for="Date"> Fecha de Nacimiento: </label>
-                    <input type="date" id="Date" name="Date" /><br /><br />
+                    <input field="*{surname}"type="text" class="col-sm-6" id="surname" name="surname" required /><br /><br />
 
-                    <label for="Email" class="col-sm-1"> Correo: </label>
+                        <label for="select" class="col-sm-2"> Metodo de verificacion: </label>
+                    <select class="col-sm-6"field="*{verificacion}" id="select" required name="select">
+                        <option value="Correo">Correo</option>
+                        <option value="Telefono" selected>Telefono</option>
+                    </select>
+                    <br /> <br />
+                    <label for="Email" class="col-sm-2"> Correo o telefono: </label>
                     <input field="*{email}"type="text" id="email" name="email" class="col-sm-7" required autofocus /><br /><br />
                     <label for="Password" class="col-sm-1"> Contraseña: </label>
-                    <input type="password" id="Password" name="Password" class="col-sm-7" required /><br /><br />
+                    <input type="password" field="*{password}" id="password" name="password" class="col-sm-7" required /><br /><br />
                     <div align="center"><button type="submit" align="center" class="btn btn-success"style="opacity:0.8 "> Crear cuenta</button></div>
 
                 </strong>
