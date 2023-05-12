@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Busqueda de jugadores y equipos </title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="icon" href="repsol_icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div class="topnav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="active" href="busqueda.html">Busqueda</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" href="Informacion.html">Informacion</a>
+                </li>
+                <li class="navbar-right">
+                    <a href="perfil.html">Perfil</a>
+                </li>
+            </ul>
+        </div>
+        <h3 class="centered">Búsqueda de jugadores</h3>
+        <div class="container">
+        <div class="row">    
+        <div class="col-xs-15 col-xs-offset-2">
+        <div class="search_bar col-md-2">
+            <select class="form-control search-slt" name="filtro" required>
+                <option value="filtro" disabled selected>Elige filtro</option>
+                <option value="name">Nombre</option>
+                <option value="posicion">Posicion</option>
+                <option value="equipo">Equipo</option>
+                <option value="goles">Goles</option>
+                <option value="asistencias">Asistencias</option>
+                <option value="partidos">Partidos</option>
+                <option value="tarjetasa">Tarjetas amarillas</option>
+                <option value="tarjetasr">Tarjetas rojas</option>
+            </select>
+        </div>
+        <div class="search_bar col-md-6">
+            <input type="text" class="form-control" name="x" id="search" placeholder="Buscar">
+        </div>
+        <div class="search_bar">
+            <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    </body>
+</html>
