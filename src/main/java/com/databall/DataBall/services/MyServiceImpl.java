@@ -9,14 +9,13 @@
  *******************************************************************************/
 
 
-package edu.comillas.icai.pat.ejemplopat.service.impl;
+package com.databall.DataBall.services;
 
-import edu.comillas.icai.pat.ejemplopat.DAO.User;
-import edu.comillas.icai.pat.ejemplopat.DTO.Usuario;
-import edu.comillas.icai.pat.ejemplopat.Repositories.UserRepository;
+import com.databall.DataBall.dao.User;
+import com.databall.DataBall.dto.Usuario;
+import com.databall.DataBall.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import edu.comillas.icai.pat.ejemplopat.service.MyService;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Optional;
@@ -81,7 +80,7 @@ public class MyServiceImpl implements MyService {
 		return i;
 	}
 	@Override
-	public  Usuario getUsuario(Integer id) {//Usuarioi es el DTO
+	public Usuario getUsuario(Integer id) {//Usuarioi es el DTO
 
 
 			Optional<User> data= userRepository.findById(id);

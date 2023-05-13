@@ -9,10 +9,10 @@
  *******************************************************************************/
 
 
-package edu.comillas.icai.pat.ejemplopat.service;
+package com.databall.DataBall.services;
 
-import edu.comillas.icai.pat.ejemplopat.DAO.User;
-import edu.comillas.icai.pat.ejemplopat.DTO.Usuario;
+import com.databall.DataBall.dao.User;
+import com.databall.DataBall.dto.Usuario;
 
 import java.util.Optional;
 

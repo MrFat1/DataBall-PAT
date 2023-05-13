@@ -1,4 +1,4 @@
-package edu.comillas.icai.pat.ejemplopat.DTO;
+package com.databall.DataBall.dto;
 
 public class Usuario {
     private String Nombre;

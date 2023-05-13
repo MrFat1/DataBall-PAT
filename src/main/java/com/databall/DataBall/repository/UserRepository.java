@@ -1,6 +1,6 @@
-package edu.comillas.icai.pat.ejemplopat.Repositories;
+package com.databall.DataBall.repository;
 
-import edu.comillas.icai.pat.ejemplopat.DAO.User;
+import com.databall.DataBall.dao.User;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
@@ -19,13 +19,13 @@ public interface UserRepository extends CrudRepository<User, Integer> {
      List< User> myQuery();
 
     @Query("UPDATE USER SET " +
-            "USER.FIRST_NAME= :userName , USER.LAST_NAME= :lastName WHERE PERSON.ID= :id ") //Con parámet
+            "USER.FIRST_NAME= :userName , USER.LAST_NAME= :lastName WHERE PERSON.ID= :id ")
     int updateUSERname(
             @Param("userName") String userName,
             @Param("lastName") String lastName,
             @Param("id") Long id);
     @Query("UPDATE USER SET " +
-            "USER.EMAIL= :userName WHERE USER.ID= :id ") //Con parámet
+            "USER.EMAIL= :userName WHERE USER.ID= :id ")
     int updateEmail(
             @Param("email") String email,
 

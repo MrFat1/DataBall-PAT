@@ -1,8 +1,8 @@
-package edu.comillas.icai.pat.ejemplopat.controler;
+package com.databall.DataBall.Controller;
 
-import edu.comillas.icai.pat.ejemplopat.DAO.User;
 
-import edu.comillas.icai.pat.ejemplopat.service.MyService;
+import com.databall.DataBall.dao.User;
+import com.databall.DataBall.services.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

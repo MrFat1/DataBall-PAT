@@ -1,4 +1,4 @@
-package edu.comillas.icai.pat.ejemplopat.DAO;
+package com.databall.DataBall.dao;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
