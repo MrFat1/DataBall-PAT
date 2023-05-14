@@ -18,4 +18,11 @@ public class BusquedaModel {
     }
 
 
+    @Override
+    public String toString() {
+        return "BusquedaModel{" +
+                "busqueda='" + busqueda + '\'' +
+                ", filtro='" + filtro + '\'' +
+                '}';
+    }
 }

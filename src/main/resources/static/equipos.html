@@ -24,20 +24,20 @@
                 </li>
             </ul>
         </div>
-        <h3 class="centered">Búsqueda de equipos</h3>
+        <h3 class="centered">Busqueda de equipos</h3>
         <div class="container">
         <div class="row">    
         <div class="col-xs-15 col-xs-offset-2">
         <div class="search_bar col-md-2">
             <select class="form-control search-slt" name="filtro" id="filtro" required>
                 <option value="filtro" disabled selected>Elige filtro</option>
-                <option value="name">Nombre</option>
-                <option value="entrenador">Entrenador</option>
-                <option value="presidente">Presidente</option>
-                <option value="posicion">Posicion</option>
-                <option value="capacidad">Capacidad</option>
-                <option value="masasalarial">Masa Salarial</option>
-                <option value="estadio">Estadio</option>
+                <option value="NOMBRE">Nombre</option>
+                <option value="ENTRENADOR">Entrenador</option>
+                <option value="PRESIDENTE">Presidente</option>
+                <option value="POSICION">Posicion</option>
+                <option value="CAPACIDAD">Capacidad</option>
+                <option value="MSALARIAL">Masa Salarial</option>
+                <option value="ESTADIO">Estadio</option>
             </select>
         </div>
         <div class="search_bar col-md-6">
@@ -52,8 +52,11 @@
         </div>
         </div>
         </div>
+        <br><br>
 
         <table class="table table-hover" id="tablaEquipos"></table>
+
+        <script src="./equipos.js"></script>
 
     </body>
 </html>

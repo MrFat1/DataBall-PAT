@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 public class EquiposController {
 
@@ -23,7 +25,7 @@ public class EquiposController {
 
     @PostMapping(path = "/getEquipoSearch",
             consumes = MediaType.APPLICATION_JSON_VALUE,
-            produces = MediaType.TEXT_PLAIN_VALUE)
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Iterable<Equipo>> getEquipo(@RequestBody BusquedaModel model) {
 
         log.info("Model generado con el POST: " + model.toString());

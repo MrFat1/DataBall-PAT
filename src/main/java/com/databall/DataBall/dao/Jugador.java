@@ -3,6 +3,7 @@ package com.databall.DataBall.dao;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.data.relational.core.sql.In;
 
 @Table("JUGADORES")
 public class Jugador {
@@ -14,15 +15,15 @@ public class Jugador {
     private @Column("EQUIPO")
     String equipo;
     private @Column("NPARTIDOS")
-    int npartidos;
+    Integer npartidos;
     private @Column("GOLES")
-    int goles;
+    Integer goles;
     private @Column("ASISTENCIAS")
-    int asistencias;
+    Integer asistencias;
     private @Column("AMARILLAS")
-    int amarillas;
+    Integer amarillas;
     private @Column("ROJAS")
-    int rojas;
+    Integer rojas;
 
     public String getNombre() {
         return nombre;
@@ -42,38 +43,38 @@ public class Jugador {
     public void setEquipo(String equipo) {
         this.equipo = equipo;
     }
-    public int getNpartidos() {
+    public Integer getNpartidos() {
         return npartidos;
     }
     public void setNpartidos(int npartidos) {
         this.npartidos = npartidos;
     }
-    public int getGoles() {
+    public Integer getGoles() {
         return goles;
     }
     public void setGoles(int goles) {
         this.goles = goles;
     }
-    public int getAsistencias() {
+    public Integer getAsistencias() {
         return asistencias;
     }
     public void setAsistencias(int asistencias) {
         this.asistencias = asistencias;
     }
-    public int getAmarillas() {
+    public Integer getAmarillas() {
         return amarillas;
     }
     public void setAmarillas(int amarillas) {
         this.amarillas = amarillas;
     }
-    public int getRojas() {
+    public Integer getRojas() {
         return rojas;
     }
     public void setRojas(int rojas) {
         this.rojas = rojas;
     }
 
-    public Jugador(String nombre, String posicion, String equipo, int npartidos, int goles, int asistencias, int amarillas, int rojas) {
+    public Jugador(String nombre, String posicion, String equipo, Integer npartidos, Integer goles, Integer asistencias, Integer amarillas, Integer rojas) {
         this.nombre = nombre;
         this.posicion = posicion;
         this.equipo = equipo;

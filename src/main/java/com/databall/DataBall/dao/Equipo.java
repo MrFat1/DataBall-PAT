@@ -16,15 +16,13 @@ public class Equipo {
     private @Column("ESTADIO")
     String estadio;
     private @Column("POSICION")
-    int posicion;
+    Integer posicion;
     private @Column("CAPACIDAD")
-    int capacidad;
+    Integer capacidad;
     private @Column("MSALARIAL")
-    int masaSalarial;
+    Integer masaSalarial;
 
-    public String getNombre() {
-        return nombre;
-    }
+    public String getNombre() { return nombre; }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -50,29 +48,29 @@ public class Equipo {
         this.estadio = estadio;
     }
 
-    public int getPosicion() {
+    public Integer getPosicion() {
         return posicion;
     }
-    public void setPosicion(int posicion) {
+    public void setPosicion(Integer posicion) {
         this.posicion = posicion;
     }
 
-    public int getCapacidad() {
+    public Integer getCapacidad() {
         return capacidad;
     }
-    public void setCapacidad(int capacidad) {
+    public void setCapacidad(Integer capacidad) {
         this.capacidad = capacidad;
     }
 
-    public int getMasaSalarial() {
+    public Integer getMasaSalarial() {
         return masaSalarial;
     }
-    public void setMasaSalarial(int masaSalarial) {
+    public void setMasaSalarial(Integer masaSalarial) {
         this.masaSalarial = masaSalarial;
     }
 
 
-    public Equipo(String nombre, String entrenador, String presidente, String estadio, int posicion, int capacidad, int masaSalarial) {
+    public Equipo(String nombre, String entrenador, String presidente, String estadio, Integer posicion, Integer capacidad, Integer masaSalarial) {
         this.nombre = nombre;
         this.entrenador = entrenador;
         this.presidente = presidente;
