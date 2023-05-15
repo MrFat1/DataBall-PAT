@@ -1,19 +1,13 @@
 package com.databall.DataBall.Controller;
 
 import com.databall.DataBall.dao.Equipo;
-import com.databall.DataBall.dao.Jugador;
-import com.databall.DataBall.dto.BusquedaModel;
 import com.databall.DataBall.services.Equipos;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class EquiposController {
@@ -23,14 +17,13 @@ public class EquiposController {
 
     Logger log = LoggerFactory.getLogger(EquiposController.class);
 
-    @PostMapping(path = "/getEquipoSearch",
-            consumes = MediaType.APPLICATION_JSON_VALUE,
+    @GetMapping(path = "/getEquipoSearch/{filtro}/{busqueda}",
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Iterable<Equipo>> getEquipo(@RequestBody BusquedaModel model) {
+    public ResponseEntity<Iterable<Equipo>> getEquipo(@PathVariable String filtro, @PathVariable String busqueda) {
 
-        log.info("Model generado con el POST: " + model.toString());
+        log.info("Datos recibidos: " + filtro + " y " + busqueda);
 
-        Iterable<Equipo> response = equipos.getEquipo(model);
+        Iterable<Equipo> response = equipos.getEquipo(filtro, busqueda);
         return ResponseEntity.ok().body(response);
 
     }

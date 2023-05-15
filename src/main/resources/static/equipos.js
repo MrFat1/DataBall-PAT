@@ -7,19 +7,15 @@ function buscarEquipo(event) {
     let inputValue = document.getElementById("search").value;
     let selectValue = document.getElementById("filtro").value;
 
-    const data = {busqueda: inputValue, filtro: selectValue};
+    //const data = {busqueda: inputValue, filtro: selectValue};
 
-    var postOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+    var getOptions = {
+        method: 'GET',
     };
 
-    urlspringBoot = "/getEquipoSearch";
+    urlspringBoot = "/getEquipoSearch/" + selectValue + "/" + inputValue;
 
-    fetch(urlspringBoot, postOptions)
+    fetch(urlspringBoot, getOptions)
         .then(response =>
             response.json())
         .then(result => {

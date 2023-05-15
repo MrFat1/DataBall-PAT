@@ -1,7 +1,6 @@
 package com.databall.DataBall.services;
 
 import com.databall.DataBall.dao.Jugador;
-import com.databall.DataBall.dto.BusquedaModel;
 import com.databall.DataBall.repository.BusquedaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,9 +12,9 @@ public class JugadoresImpl implements Jugadores{
     BusquedaRepository repo;
 
     @Override
-    public Iterable<Jugador> getJugador(BusquedaModel model) {
+    public Iterable<Jugador> getJugador(String filtro, String busqueda) {
 
-        Iterable<Jugador> result = repo.selectJugador(model.getFiltro(), model.getBusqueda());
+        Iterable<Jugador> result = repo.selectJugador(filtro, busqueda);
 
         return result;
     }

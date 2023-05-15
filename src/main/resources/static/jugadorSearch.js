@@ -8,19 +8,14 @@ function buscarJugador(event) {
 
     let selectValue = document.getElementById("filtro").value;
 
-    const data = {busqueda: inputValue, filtro: selectValue};
 
-    var postOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+    var jugadoresOptions = {
+        method: 'GET',
     };
 
-    urlspringBoot = "/getJugadorSearch";
+    urlspringBoot = "/getJugadorSearch/" + selectValue + "/" + inputValue;
 
-    fetch(urlspringBoot, postOptions)
+    fetch(urlspringBoot, jugadoresOptions)
         .then(response =>
             response.json())
         .then(result => {
