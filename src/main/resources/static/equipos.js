@@ -7,11 +7,19 @@ function buscarEquipo(event) {
     let inputValue = document.getElementById("search").value;
     let selectValue = document.getElementById("filtro").value;
 
-    //const data = {busqueda: inputValue, filtro: selectValue};
-
     var getOptions = {
         method: 'GET',
     };
+
+    if (inputValue) {
+
+        //Do nothing
+
+    } else {
+
+        inputValue = "all";
+
+    }
 
     urlspringBoot = "/getEquipoSearch/" + selectValue + "/" + inputValue;
 
@@ -38,6 +46,9 @@ function buscarEquipo(event) {
 async function generarTabla(result) {
 
     var table = document.getElementById("tablaEquipos");
+
+    table.innerHTML = ""; //Borramos la tabla actual para actualizarla
+
     var thead = document.createElement("thead");
     var tbody = document.createElement("tbody");
 

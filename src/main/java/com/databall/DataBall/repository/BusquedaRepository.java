@@ -11,11 +11,10 @@ import java.util.ArrayList;
 
 public interface BusquedaRepository extends CrudRepository<Equipo, Integer> {
 
-    @Query(value = "SELECT * FROM EQUIPOS WHERE :filtro LIKE '%:busqueda%'")
+    @Query("SELECT * FROM EQUIPOS WHERE :filtro LIKE '%Real%'")
     ArrayList<Equipo> getResultadoBusqueda(
             @Param("filtro") String filtro,
-            @Param("busqueda") String busqueda
-    );
+            @Param("busqueda") String busqueda);
 
     @Modifying
     @Query("SELECT * FROM JUGADORES WHERE :filtro LIKE '%:busqueda%'")
