@@ -21,33 +21,65 @@ function buscarEquipo(event) {
 
     }
 
-    urlspringBoot = "/getEquipoSearch/" + selectValue + "/" + inputValue;
+    if (selectValue == "filtro") {
 
-    fetch(urlspringBoot, getOptions)
-        .then(response =>
-            response.json())
-        .then(result => {
+        errorMessage("Selecciona un filtro");
 
-            console.log(result);
+    } else {
 
-            if (result.length == 0) {
-                alert("Ningún resultado coincide con tu búsqueda.");
-            } else {
-                generarTabla(result);
-            }
+        urlspringBoot = "/getEquipoSearch/" + selectValue + "/" + inputValue;
 
-        })
-            
-        .catch(error => 
-            console.log('error', error));
+        fetch(urlspringBoot, getOptions)
+            .then(response =>
+                response.json())
+            .then(result => {
 
+                console.log(result);
+
+                if (result.length == 0) {
+
+                    errorMessage("Ningún resultado coincide con tu búsqueda.");
+
+                } else {
+                    generarTabla(result);
+                }
+
+            })
+
+            .catch(error =>
+                console.log('error', error));
+
+    }
+
+
+}
+
+function errorMessage(message) {
+
+    var divErrorMsg = document.createElement("div");
+    const errorDiv = document.getElementById("error-message");
+    errorDiv.innerHTML = "";
+
+    var table = document.getElementById("tablaEquipos");
+    table.innerHTML = "";
+
+    divErrorMsg.classList.add("alert");
+    divErrorMsg.classList.add("alert-danger");
+    divErrorMsg.classList.add("centered");
+    divErrorMsg.setAttribute("role", "alert");
+    divErrorMsg.innerHTML = message;
+
+    errorDiv.appendChild(divErrorMsg);
 }
 
 async function generarTabla(result) {
 
     var table = document.getElementById("tablaEquipos");
+    const errorDiv = document.getElementById("error-message");
 
     table.innerHTML = ""; //Borramos la tabla actual para actualizarla
+    errorDiv.innerHTML = "";
+
 
     var thead = document.createElement("thead");
     var tbody = document.createElement("tbody");

@@ -21,25 +21,47 @@ function buscarJugador(event) {
 
     }
 
-    urlspringBoot = "/getJugadorSearch/" + selectValue + "/" + inputValue;
+    if (selectValue == "filtro") {
 
-    fetch(urlspringBoot, jugadoresOptions)
-        .then(response =>
-            response.json())
-        .then(result => {
-            if (result.length == 0) {
-                alert("Ningún resultado coincide con tu búsqueda.");
-            } else {
-                generarTabla(result);
-            }
+        errorMessage("Selecciona un filtro");
 
-        })
+    } else {
 
-        .catch(error =>
-            console.log('error', error));
+        urlspringBoot = "/getJugadorSearch/" + selectValue + "/" + inputValue;
 
+        fetch(urlspringBoot, jugadoresOptions)
+            .then(response =>
+                response.json())
+            .then(result => {
+                if (result.length == 0) {
+                    errorMessage("Ningún resultado coincide con tu búsqueda.");
+                } else {
+                    generarTabla(result);
+                }
+            })
 
+            .catch(error =>
+                console.log('error', error));
 
+    }
+}
+
+function errorMessage(message) {
+
+    var divErrorMsg = document.createElement("div");
+    const errorDiv = document.getElementById("error-message");
+    errorDiv.innerHTML = "";
+
+    var table = document.getElementById("tablaJugadores");
+    table.innerHTML = "";
+
+    divErrorMsg.classList.add("alert");
+    divErrorMsg.classList.add("alert-danger");
+    divErrorMsg.classList.add("centered");
+    divErrorMsg.setAttribute("role", "alert");
+    divErrorMsg.innerHTML = message;
+
+    errorDiv.appendChild(divErrorMsg);
 
 
 }
@@ -47,8 +69,10 @@ function buscarJugador(event) {
 async function generarTabla(result) {
 
     var table = document.getElementById("tablaJugadores");
+    const errorDiv = document.getElementById("error-message");
 
     table.innerHTML = "";
+    errorDiv.innerHTML = "";
 
     var thead = document.createElement("thead");
     var tbody = document.createElement("tbody");

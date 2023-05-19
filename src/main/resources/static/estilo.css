@@ -58,11 +58,11 @@ ul {
     border: 1px solid #ddd;
     padding: 8px;
 }
-
+  
 #tablaEquipos tr:nth-child(even){background-color: #f2f2f2;}
-
+  
 #tablaEquipos tr:hover {background-color: #ddd;}
-
+  
 #tablaEquipos th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -70,5 +70,3 @@ ul {
     background-color: #04AA6D;
     color: rgb(252, 252, 252);
 }
-
-
