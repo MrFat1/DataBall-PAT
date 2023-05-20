@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class EquiposImpl implements Equipos{
+public class EquiposImpl implements Equipos {
 
     Logger log = LoggerFactory.getLogger(EquiposImpl.class);
 
@@ -56,10 +56,8 @@ public class EquiposImpl implements Equipos{
                                 rs.getString("presidente"),
                                 rs.getString("estadio"),
                                 rs.getInt("posicion"),
-                                rs.getInt("capacidad"),
-                                rs.getInt("msalarial")
+                                rs.getInt("capacidad")
                         )
         );
     }
-
 }

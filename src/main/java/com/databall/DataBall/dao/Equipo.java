@@ -19,8 +19,6 @@ public class Equipo {
     Integer posicion;
     private @Column("CAPACIDAD")
     Integer capacidad;
-    private @Column("MSALARIAL")
-    Integer masaSalarial;
 
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) {
@@ -61,23 +59,13 @@ public class Equipo {
     public void setCapacidad(Integer capacidad) {
         this.capacidad = capacidad;
     }
-
-    public Integer getMasaSalarial() {
-        return masaSalarial;
-    }
-    public void setMasaSalarial(Integer masaSalarial) {
-        this.masaSalarial = masaSalarial;
-    }
-
-
-    public Equipo(String nombre, String entrenador, String presidente, String estadio, Integer posicion, Integer capacidad, Integer masaSalarial) {
+    public Equipo(String nombre, String entrenador, String presidente, String estadio, Integer posicion, Integer capacidadal) {
         this.nombre = nombre;
         this.entrenador = entrenador;
         this.presidente = presidente;
         this.estadio = estadio;
         this.posicion = posicion;
         this.capacidad = capacidad;
-        this.masaSalarial = masaSalarial;
     }
 
     public Equipo() {
@@ -87,13 +75,12 @@ public class Equipo {
         this.estadio = "";
         this.posicion = 0;
         this.capacidad = 0;
-        this.masaSalarial = 0;
     }
 
     @Override
     public String toString() {
         return "Equipo [Nombre=" + this.nombre + ", Entrenador=" + this.entrenador + ", Presidente=" + this.presidente + ", Estadio=" + this.estadio + ", Posicion=" + this.posicion
-                + ", Capacidad=" + this.capacidad + ", Masa Salarial=" + this.masaSalarial + "]";
+                + ", Capacidad=" + this.capacidad +  "]";
     }
 
 }

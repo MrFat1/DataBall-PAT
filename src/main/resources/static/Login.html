@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Iniciar sesion</title>
@@ -36,18 +36,16 @@
 <h5>Introduzca su correo o telefono de verificacion y su contraseña para iniciar sesion</h5>
 
 <br><br>
-<form object="Log" autocomplete="off" action="Login" method="post">
-  <fieldset>
+
     <strong>
       <label for="V" class="col-sm-1"> Correo o telefono: </label>
       <input field="*{V}" type="text" id="V" name="V" required class="col-sm-7" /><br /><br />
       <label for="Password" class="col-sm-1"> Contraseña: </label>
       <input type="password" field="*{password}" id="password" name="password" class="col-sm-7" required /><br /><br />
-      <div align="center"><button type="submit" align="center" class="btn btn-success"style="opacity:0.8 "> Iniciar sesion</button></div>
+      <div align="center"><button type="submit" id="log" align="center" class="btn btn-success"style="opacity:0.8 "> Iniciar sesion</button></div>
 
     </strong>
-  </fieldset>
-</form>
+  <script src="login.js"></script>
 </div>
 </body>
 </html>

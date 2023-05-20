@@ -12,6 +12,7 @@
 package com.databall.DataBall.services;
 
 import com.databall.DataBall.dao.User;
+import com.databall.DataBall.dao.cuenta;
 import com.databall.DataBall.dto.Usuario;
 
 import java.util.Optional;
@@ -31,4 +32,9 @@ public interface MyService {
     Usuario getUsuario(Integer id); //Select User
 
     Optional<User> getUser(Integer id);
+    public void setPassword(int id, String password);
+
+    cuenta getPasssword(int id);
+
+    User getUserCorreo(String correo);
 }

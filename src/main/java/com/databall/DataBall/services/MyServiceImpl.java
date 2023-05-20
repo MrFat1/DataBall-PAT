@@ -12,11 +12,12 @@
 package com.databall.DataBall.services;
 
 import com.databall.DataBall.dao.User;
+import com.databall.DataBall.dao.cuenta;
 import com.databall.DataBall.dto.Usuario;
+import com.databall.DataBall.repository.CuentaRepository;
 import com.databall.DataBall.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Optional;
 
@@ -25,6 +26,17 @@ import java.util.Optional;
 public class MyServiceImpl implements MyService {
 	@Autowired
 	UserRepository userRepository;
+	@Autowired
+	CuentaRepository cuentaRepository;
+
+	@Override
+	public Object getHealthCheck(String text) {
+		String a;
+
+		return null;
+	}
+
+
 
 	@Override
 	public int SetUSER(User U) { //funciona
@@ -55,6 +67,7 @@ public class MyServiceImpl implements MyService {
 		else
 			return false;
 	}
+
 	@Override
 	public Integer Count()
 	{
@@ -79,6 +92,29 @@ public class MyServiceImpl implements MyService {
 	public Optional<User> getUser(Integer id) {
 		Optional<User> data = userRepository.findById(id);
 		return data;
+	}
+	@Override
+	public void setPassword(int id, String password)
+	{
+		userRepository.savePassword(id,password);
+	}
+	@Override
+	public cuenta getPasssword(int id)
+	{
+
+		Optional<cuenta> c=cuentaRepository.findById(id);
+		cuenta C = null;
+		if(c.isPresent())
+		{
+			C=new cuenta(c.get().getId(),c.get().getPassword());
+		}
+		return C;
+	}
+	@Override
+	public User getUserCorreo(String correo)
+	{
+		User u =userRepository.getUserCorreo(correo);
+		return u;
 	}
 
 }
