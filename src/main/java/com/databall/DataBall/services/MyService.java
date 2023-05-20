@@ -18,10 +18,6 @@ import java.util.Optional;
 
 public interface MyService {
 
-
-
-    Object getHealthCheck(String s);
-
     int SetUSER(User U); // insert User
 
     void DeleteUserbyID(User u);

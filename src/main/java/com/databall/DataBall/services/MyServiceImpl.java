@@ -26,24 +26,6 @@ public class MyServiceImpl implements MyService {
 	@Autowired
 	UserRepository userRepository;
 
-
-	@Override
-	public Object getHealthCheck(String text) {
-
-		if(text!=null) {
-
-
-			String url = "https://api.thecatapi.com/v1/images/search";
-			RestTemplate restTemplate = new RestTemplate();
-			Object o = restTemplate.getForObject(text, Object.class);
-			return o;
-		}
-		else
-			return null;
-	}
-
-
-
 	@Override
 	public int SetUSER(User U) { //funciona
 		if (U != null) {
