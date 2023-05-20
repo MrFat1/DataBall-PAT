@@ -1,0 +1,5 @@
+﻿a[href*="/wiki/"] {
+    pointer-events: none;
+    cursor: default;
+    color: brown;
+}

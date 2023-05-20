@@ -28,16 +28,6 @@ public class MyServiceImpl implements MyService {
 	UserRepository userRepository;
 	@Autowired
 	CuentaRepository cuentaRepository;
-
-	@Override
-	public Object getHealthCheck(String text) {
-		String a;
-
-		return a;
-	}
-
-
-
 	@Override
 	public int SetUSER(User U) { //funciona
 		if (U != null) {

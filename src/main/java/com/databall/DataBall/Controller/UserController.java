@@ -4,8 +4,6 @@ package com.databall.DataBall.Controller;
 import com.databall.DataBall.dao.User;
 import com.databall.DataBall.dao.cuenta;
 import com.databall.DataBall.services.MyService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -15,19 +13,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-
-import static java.lang.System.out;
-
 @Controller
 
 
 public class UserController {
     @Autowired
     MyService myService;
-    private static User u;
+    private static User u=null;
     @PostMapping(value = "/enviar")
     public String CrearUser(String nombre,String surname,String email,String verificacion,String password )
     {
@@ -75,9 +67,11 @@ public class UserController {
         }
         return ResponseEntity.ok().body(id);
     }
-    @GetMapping("Perfi")
-    public ResponseEntity<User> a()
+    @GetMapping(path="/Perfi",produces = MediaType.APPLICATION_JSON_VALUE)
+    public Object a()
     {
+        if(u==null)
+            return ResponseEntity.ok().body(0);
         return ResponseEntity.ok().body(u);
     }
 }
