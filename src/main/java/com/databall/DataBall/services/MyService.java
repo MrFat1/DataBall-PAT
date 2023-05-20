@@ -37,4 +37,6 @@ public interface MyService {
     cuenta getPasssword(int id);
 
     User getUserCorreo(String correo);
+
+    void ActualizarUser(String nombre, String apellido, int id, String correo);
 }

@@ -13,8 +13,8 @@ const id= document.getElementById("id");
 id.value=json.userid;
 const email= document.getElementById("email");
 email.value=json.email;
-
-document.getElementById('boton').onclick = function() {
-window.location.href="/editarperfil.html";
+});
+document.getElementById('boton act').onclick = function(event){
+fetch('/actualizar/'nombre.value+'/'+apellido.value+'/'+id.value+'/'+email.value,{method:'POST'})
+.then(response=>window.location.href="perfil.html");
 }
-})

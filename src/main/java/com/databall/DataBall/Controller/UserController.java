@@ -74,5 +74,10 @@ public class UserController {
             return ResponseEntity.ok().body(0);
         return ResponseEntity.ok().body(u);
     }
+    @PostMapping(path="/actualizar/{nombre}/{apellido}/{id}/{email}")
+    public void aaaaa(@PathVariable String nombre, @PathVariable String apellido, @PathVariable int id,@PathVariable String email)
+    {
+        myService.ActualizarUser(nombre, apellido, id, email);
+    }
 }
 

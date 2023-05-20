@@ -106,5 +106,11 @@ public class MyServiceImpl implements MyService {
 		User u =userRepository.getUserCorreo(correo);
 		return u;
 	}
+	@Override
+	public void ActualizarUser(String nombre,String apellido,int id, String correo)
+	{
+		userRepository.updateUSERname(nombre,apellido,id);
+		userRepository.updateEmail(correo,id);
+	}
 
 }

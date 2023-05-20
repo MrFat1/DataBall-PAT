@@ -26,13 +26,12 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     int updateUSERname(
             @Param("userName") String userName,
             @Param("lastName") String lastName,
-            @Param("id") Long id);
+            @Param("id") int id);
     @Query("UPDATE USER SET " +
             "USER.EMAIL= :userName WHERE USER.ID= :id ")
     int updateEmail(
             @Param("email") String email,
-
-            @Param("id") Long id);
+            @Param("id") int id);
     @Query("SELECT * FROM USERS WHERE EMAIL = :correo")
     User getUserCorreo(
             @Param("correo") String correo
