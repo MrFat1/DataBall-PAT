@@ -33,7 +33,7 @@ public class MyServiceImpl implements MyService {
 	public Object getHealthCheck(String text) {
 		String a;
 
-		return null;
+		return a;
 	}
 
 
