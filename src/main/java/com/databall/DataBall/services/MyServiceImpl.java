@@ -84,6 +84,17 @@ public class MyServiceImpl implements MyService {
 		return data;
 	}
 	@Override
+	public User getUserrr(int id)
+	{
+		User w=new User();
+		Iterable<User> d=userRepository.findAll();
+		for (User q: d
+			 ) {if(q.getUSERID()==id)
+				 w=q;
+		}
+		return w;
+	}
+	@Override
 	public void setPassword(int id, String password)
 	{
 		userRepository.savePassword(id,password);
@@ -107,10 +118,9 @@ public class MyServiceImpl implements MyService {
 		return u;
 	}
 	@Override
-	public void ActualizarUser(String nombre,String apellido,int id, String correo)
+	public void ActualizarUser(String nombre, String apellido, int id, String correo)
 	{
-		userRepository.updateUSERname(nombre,apellido,id);
-		userRepository.updateEmail(correo,id);
+		userRepository.updateUSERname(nombre,apellido,correo,id);
 	}
 
 }

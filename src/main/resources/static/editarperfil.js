@@ -15,6 +15,6 @@ const email= document.getElementById("email");
 email.value=json.email;
 });
 document.getElementById('boton act').onclick = function(event){
-fetch('/actualizar/'nombre.value+'/'+apellido.value+'/'+id.value+'/'+email.value,{method:'POST'})
+fetch("/actualizar/"+nombre.value+'/'+apellido.value+'/'+id.value+'/'+email.value,{method:'POST'})
 .then(response=>window.location.href="perfil.html");
 }

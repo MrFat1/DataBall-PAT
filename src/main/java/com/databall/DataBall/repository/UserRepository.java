@@ -17,21 +17,18 @@ import java.util.Optional;
 
 public interface UserRepository extends CrudRepository<User, Integer> {
     < S extends User > S save(S entity);
+
     < S extends User > Iterable< S> saveAll(Iterable< S> entities);
      @Query("SELECT * FROM USERS") //Sin parámetros
      List< User> myQuery();
-
-    @Query("UPDATE USER SET " +
-            "USER.FIRST_NAME= :userName , USER.LAST_NAME= :lastName WHERE PERSON.ID= :id ")
-    int updateUSERname(
-            @Param("userName") String userName,
-            @Param("lastName") String lastName,
-            @Param("id") int id);
-    @Query("UPDATE USER SET " +
-            "USER.EMAIL= :userName WHERE USER.ID= :id ")
-    int updateEmail(
-            @Param("email") String email,
-            @Param("id") int id);
+     @Modifying
+     @Query("UPDATE USERS SET " +
+            "FIRST_NAME= :nombre ,EMAIL= :email, LAST_NAME= :lastName WHERE ID= :id")
+     int updateUSERname(
+             @Param("nombre") String nombre,
+             @Param("lastName") String apellido,
+             @Param("email") String email,
+             @Param("id") int id);
     @Query("SELECT * FROM USERS WHERE EMAIL = :correo")
     User getUserCorreo(
             @Param("correo") String correo

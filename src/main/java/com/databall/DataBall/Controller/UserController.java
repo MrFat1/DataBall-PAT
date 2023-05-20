@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.Optional;
+
 @Controller
 
 
@@ -78,6 +80,9 @@ public class UserController {
     public void aaaaa(@PathVariable String nombre, @PathVariable String apellido, @PathVariable int id,@PathVariable String email)
     {
         myService.ActualizarUser(nombre, apellido, id, email);
+        u=myService.getUserrr(id);
+
     }
 }
+
 

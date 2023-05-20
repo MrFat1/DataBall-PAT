@@ -32,6 +32,9 @@ public interface MyService {
     Usuario getUsuario(Integer id); //Select User
 
     Optional<User> getUser(Integer id);
+
+    User getUserrr(int id);
+
     public void setPassword(int id, String password);
 
     cuenta getPasssword(int id);
