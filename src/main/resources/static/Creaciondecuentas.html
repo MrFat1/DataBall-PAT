@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="data.png">
 </head>
-<body style="background-color: silver">
+<body>
         <div class="topnav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="active" aria-current="page" href="index.html">Inicio</a>
+                    <a aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a aria-current="page" href="busqueda.html">Búsqueda</a>
@@ -21,10 +21,10 @@
                     <a aria-current="page" href="ElBicho.html">PaginaCR7</a>
                 </li>
                 <li class="nav-item">
-                    <a aria-current="page" href="videos.html">Videos</a>
+                    <a aria-current="page" href="Informacion.html">Informacion</a>
                 </li>
-                <li class="nav-item">
-                    <a href="perfil.html">Perfil</a>
+                <li class="navbar-right">
+                    <a aria-current="page" class="active" href="perfil.html">Perfil</a>
                 </li>
             </ul>
         </div>
@@ -36,8 +36,7 @@
                     <input field="*{nombre}" type="text" id="Nombre" name="nombre" required class="col-sm-7" /><br /><br />
                     <label for="surname" class="col-sm-1"> Apellidos: </label>
                     <input field="*{surname}"type="text" class="col-sm-6" id="surname" name="surname" required /><br /><br />
-
-                        <label for="select" class="col-sm-2"> Metodo de verificacion: </label>
+                    <label for="select" class="col-sm-2"> Metodo de verificacion: </label>
                     <select class="col-sm-6"field="*{verificacion}" id="select" required name="select">
                         <option value="Correo">Correo</option>
                         <option value="Telefono" selected>Telefono</option>
@@ -57,9 +56,6 @@
             </fieldset>
 
         </form>
-
-
-
-    </section>
+        </section>
 </body>
 </html>

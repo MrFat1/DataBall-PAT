@@ -3,46 +3,69 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8"/>
+    <title>Información</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" href="data.png">
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body align="center" class="fondo">
-<div class="topnav">
-    <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a aria-current="page" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-            <a aria-current="page" href="busqueda.html">Búsqueda</a>
-        </li>
-        <li class="nav-item">
-            <a aria-current="page" class="active" href="ElBicho.html">PaginaCR7</a>
-        </li>
-        <li class="nav-item">
-            <a aria-current="page" href="videos.html">Videos</a>
-        </li>
-        <li class="nav-item">
-            <a href="perfil.html">Perfil</a>
-        </li>
-    </ul>
-</div>
+<body>
+    <div class="topnav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a aria-current="page" href="busqueda.html">Búsqueda</a>
+            </li>
+            <li class="nav-item">
+                <a aria-current="page" href="ElBicho.html">PaginaCR7</a>
+            </li>
+            <li class="nav-item">
+                <a aria-current="page" class="active" href="Informacion.html">Informacion</a>
+            </li>
+            <li class="nav-item">
+                <a aria-current="page" href="perfil.html">Perfil</a>
+            </li>
+        </ul>
+    </div>
     <div align="center" style="background-color: light-gray">
         <Font size=4><article class="cabecera" id="cabecera"><h1>Mas sobre nosotros</h1></article>
+        </Font>
+    </div>
 
-
-    <article >  <p>Databall es una p&aacute;gina creada para la b&uacute;squeda de estad&iacute;sticas sobre jugadores </br></br>
+    <article align="center"><p>Databall es una p&aacute;gina creada para la b&uacute;squeda de estad&iacute;sticas sobre jugadores
     Aqui usted podra buscar jugadores, y enterarse de la ultima informacion del mundo del futbol
     </p></article>
-    <br />
-        <p>Si necesita contactarnos puede hacerlo mediante nuestro correo</p>
-        <a href="gmail.com"> Correoinexistente@gmail.com</a>
-        <br />
-        <p>Siguenos en nuestras redes sociales:</p>
-        <a href="#">Facebook</a><br />
-        <a href="#">Twitter</a><br />
-        <a href="#">Instagram</a><br />
-        <a href="#">linkedin</a><br />
-        </Font>
+    <form method="post" id="submit">
+        <fieldset>
+            <legend>Notificaciones</legend>
+            <h4>Subscribete para recibir actualizaciones cada vez que haya nuevo contenido.</h4>
+            <label for="correo"></span>Introduce tu correo:</label>
+            <input type="email" id="correo" name="email"><br><br>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <input type="reset" class="btn btn-primary">
+        </fieldset>
+    </form>
+    <script src="./send.js"></script>
+    <br><br>
+    <h2>Conócenos</h2>
+    <div class="fila">
+        <div class="column">
+            <a href=# class="Facebook"><img class="center" src="logo_facebook.png" alt="Logo Facebook" style="width: 20%;"></a>
+        </div>
+        <div class="column">
+            <a href=# class="insta"><img class="center" src="logo_insta.png" alt="Logo Instagram" style="width:20%;"></a>
+        </div>
+        <div class="column">
+            <a href=# class="twitter"><img class="center" src="logo_twitter.png" alt="Logo Twitter" style="width:20%;"></a>
+        </div>
+        <div class="column">
+            <a href=# class="youtube"><img class="center" src="logo_yt.png" alt="Logo YoutTube" style="width:20%;"></a>
+        </div>
+        <div class="column">
+            <a href=# class="linkedin"><img class="center" src="logo_linkedin.png" alt="Logo LinkedIn" style="width:20%;"></a>
+        </div>
     </div>
 </body>
 </html>

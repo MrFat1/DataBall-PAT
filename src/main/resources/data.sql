@@ -1,7 +1,28 @@
-INSERT INTO EQUIPOS VALUES ('Real Madrid', 'Miguel', 'Paco', 'Bernabeu', 1, 100, 300);
-INSERT INTO EQUIPOS VALUES ('Barcelona', 'Miguel', 'Asorta', 'tt', 1, 1200, 3010);
-INSERT INTO EQUIPOS VALUES ('Si', 'dd', 'Padaco', 'Bedddrnabeu', 12, 100, 3030);
-INSERT INTO EQUIPOS VALUES ('Real wdawd', 'Miwadaguel', 'Pwadawdaco', 'Berna2dawdbeu', 111, 1200, 300);
+INSERT INTO CUENTA VALUES
+(1,'password');
+INSERT INTO USERS VALUES
+(1,'Juan','Ortiz','1234');
+
+INSERT INTO EQUIPOS (NOMBRE, ENTRENADOR, PRESIDENTE, ESTADIO, POSICION, CAPACIDAD) VALUES
+('Almeria', 'Rubi', 'Turki Al-Sheikh', 'Power Horse Stadium', 13, 15200),
+('Athletic Club', 'Ernesto Valverde', 'Jon Uriarte', 'San Mamés', 6, 53000),
+('Atletico Madrid', 'Diego Simeone', 'Enrique Cerezo', 'Cívitas Metropolitano', 3, 68000),
+('Barcelona', 'Xavi Hernandez', 'Joan Laporta', 'Spotify Camp Nou', 2, 100000),
+('Betis', 'Manuel Pellegrini', 'Ángel Haro', 'Benito Villamarín', 4, 60000),
+('Cadiz', 'Sergio González', 'Manuel Vizcaíno Fernández', 'Nuevo Mirandilla', 19, 19500),
+('Celta Vigo', 'Eduardo Coudet', 'Carlos Mouriño', 'Abanca-Balaídos', 16, 32000),
+('Elche', 'Jorge Almirón', 'Joaquín Buitrago', 'Estadio Martínez Valero', 20, 36000),
+('Espanyol', 'Diego Martínez', 'Chen Yansheng', 'RCDE Stadium', 15, 40000),
+('Getafe', 'Quique Sánchez Flores', 'Ángel Torres', 'Coliseum Alfonso Pérez', 14, 17000),
+('Girona', 'Míchel Sánchez', 'Delfí Geli', 'Montilivi', 17, 10000),
+('Mallorca', 'Javier Aguirre', 'Andy Kohlberg', 'Visit Mallorca Estadi', 12, 23000),
+('Osasuna', 'Jagoba Arrasate', 'Luis Sabalza', 'El Sadar', 7, 23500),
+('Rayo Vallecano', 'Andoni Iraola', 'Raúl Martín Presa', 'Campo de Fútbol de Vallecas', 9, 14000),
+('Real Madrid', 'Carlo Ancelotti', 'Florentino Pérez', 'Santiago Bernabéu', 1, 84000),
+('Real Sociedad', 'Imanol Alguacil', 'Jokin Aperribay', 'Reale Arena', 5, 32000),
+('Sevilla', 'Jorge Sampaoli', 'José Castro', 'Ramón Sánchez-Pizjuán', 18, 45500),
+('Valencia', 'Gennaro Gattuso', 'Layhoon Chan', 'Mestalla', 10, 52000),
+('Valladolid', 'Pacheta', 'Ronaldo Nazário', 'José Zorrilla', 11, 26000);
 
 INSERT INTO JUGADORES (NOMBRE,POSICION,EQUIPO,NPARTIDOS,GOLES,ASISTENCIAS,AMARILLAS,ROJAS) VALUES
 ('Marcos Acuña','DF','Sevilla',4,0,0,1,1),

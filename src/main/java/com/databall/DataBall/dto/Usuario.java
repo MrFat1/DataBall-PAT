@@ -40,7 +40,6 @@ public class Usuario {
         this.correo = correo;
     }
 
-
     private String correo;
 
 }

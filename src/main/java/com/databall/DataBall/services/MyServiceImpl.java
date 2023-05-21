@@ -1,22 +1,12 @@
-/*******************************************************************************
- * Copyright (c) 2023 Universidad de Comillas ICAI.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the company
- * which accompanies this distribution
- *
- * Contributors:
- *     Universidad de Comillas - ICAI
- *******************************************************************************/
-
-
 package com.databall.DataBall.services;
 
 import com.databall.DataBall.dao.User;
+import com.databall.DataBall.dao.cuenta;
 import com.databall.DataBall.dto.Usuario;
+import com.databall.DataBall.repository.CuentaRepository;
 import com.databall.DataBall.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.Optional;
 
@@ -25,7 +15,8 @@ import java.util.Optional;
 public class MyServiceImpl implements MyService {
 	@Autowired
 	UserRepository userRepository;
-
+	@Autowired
+	CuentaRepository cuentaRepository;
 	@Override
 	public int SetUSER(User U) { //funciona
 		if (U != null) {
@@ -46,7 +37,7 @@ public class MyServiceImpl implements MyService {
 		java.lang.Iterable<User> Users=userRepository.findAll();
 		return Users;
 	}
-	
+
 	@Override
 	public boolean findUser(User U)
 	{
@@ -55,6 +46,7 @@ public class MyServiceImpl implements MyService {
 		else
 			return false;
 	}
+
 	@Override
 	public Integer Count()
 	{
@@ -65,20 +57,59 @@ public class MyServiceImpl implements MyService {
 	public Usuario getUsuario(Integer id) {//Usuarioi es el DTO
 
 
-			Optional<User> data= userRepository.findById(id);
-			Usuario u;
+		Optional<User> data= userRepository.findById(id);
+		Usuario u;
 
-			if (data.isPresent())
-				u = new Usuario(data.get().getName(), data.get().getSurname(),data.get().getEmail());
-			else
-				u= new Usuario("","","");
-			return u;
+		if (data.isPresent())
+			u = new Usuario(data.get().getName(), data.get().getSurname(),data.get().getEmail());
+		else
+			u= new Usuario("","","");
+		return u;
 
 	}
 	@Override
 	public Optional<User> getUser(Integer id) {
 		Optional<User> data = userRepository.findById(id);
 		return data;
+	}
+	@Override
+	public User getUserrr(int id)
+	{
+		User w=new User();
+		Iterable<User> d=userRepository.findAll();
+		for (User q: d
+		) {if(q.getUSERID()==id)
+			w=q;
+		}
+		return w;
+	}
+	@Override
+	public void setPassword(int id, String password)
+	{
+		userRepository.savePassword(id,password);
+	}
+	@Override
+	public cuenta getPasssword(int id)
+	{
+
+		Optional<cuenta> c=cuentaRepository.findById(id);
+		cuenta C = null;
+		if(c.isPresent())
+		{
+			C=new cuenta(c.get().getId(),c.get().getPassword());
+		}
+		return C;
+	}
+	@Override
+	public User getUserCorreo(String correo)
+	{
+		User u =userRepository.getUserCorreo(correo);
+		return u;
+	}
+	@Override
+	public void ActualizarUser(String nombre, String apellido, int id, String correo)
+	{
+		userRepository.updateUSERname(nombre,apellido,correo,id);
 	}
 
 }

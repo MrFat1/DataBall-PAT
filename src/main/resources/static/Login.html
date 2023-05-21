@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Iniciar sesion</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Iniciar sesion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="icon" href="data.png">
   <link rel="stylesheet" href="estilo.css">
 
@@ -15,39 +15,34 @@
       <a aria-current="page" href="index.html">Inicio</a>
     </li>
     <li class="nav-item">
-      <a class="active" aria-current="page" href="busqueda.html">Busqueda</a>
+      <a  aria-current="page" href="busqueda.html">Busqueda</a>
     </li>
     <li class="nav-item">
       <a aria-current="page" href="ElBicho.html">PaginaCR7</a>
     </li>
     <li class="nav-item">
-      <a aria-current="page" href="videos.html">Videos</a>
+      <a aria-current="page" href="Informacion.html">Informacion</a>
     </li>
     <li class="navbar-right">
-      <a href="perfil.html">Perfil</a>
+      <a class="active" href="perfil.html">Perfil</a>
     </li>
   </ul>
 </div>
 </nav>
-<div align="center">
-  <br>
-<h5>Hemos observado que actualmente usted no esta usando ninguna cuenta</h5>
-  <br>
-<h5>Introduzca su correo o telefono de verificacion y su contraseña para iniciar sesion</h5>
+    <div align="center">
+      <br>
+      <h4>Hemos observado que actualmente usted no esta usando ninguna cuenta</h4>
+      <h4>Introduzca su correo de verificacion y su contraseña para iniciar sesion</h4>
+      <br><br>
+      <strong>
+        <label for="V" class="centered"> Introduce tu correo: </label>
+        <input  type="text" id="V" name="V" required class="centered" /><br /><br/>
+        <label for="Password" class="centered"> Introduce tu contraseña:</label>
+        <input type="password"id="password" name="password" class="centered" required /><br /><br />
+        <div align="center"><button type="submit" id="log" align="center" class="btn btn-success"style="opacity:0.8 "> Iniciar sesion</button></div>
 
-<br><br>
-<form object="Log" autocomplete="off" action="Login" method="post">
-  <fieldset>
-    <strong>
-      <label for="V" class="col-sm-1"> Correo o telefono: </label>
-      <input field="*{V}" type="text" id="V" name="V" required class="col-sm-7" /><br /><br />
-      <label for="Password" class="col-sm-1"> Contraseña: </label>
-      <input type="password" field="*{password}" id="password" name="password" class="col-sm-7" required /><br /><br />
-      <div align="center"><button type="submit" align="center" class="btn btn-success"style="opacity:0.8 "> Iniciar sesion</button></div>
-
-    </strong>
-  </fieldset>
-</form>
-</div>
-</body>
+      </strong>
+      <script src="login.js"></script>
+    </div>
+  </body>
 </html>

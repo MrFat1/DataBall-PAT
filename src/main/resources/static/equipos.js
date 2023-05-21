@@ -92,7 +92,6 @@ async function generarTabla(result) {
     var h4 = tr.insertCell(3);
     var h5 = tr.insertCell(4);
     var h6 = tr.insertCell(5);
-    var h7 = tr.insertCell(6);
 
     h1.innerHTML = "Nombre";
     h2.innerHTML = "Entrenador";
@@ -100,7 +99,6 @@ async function generarTabla(result) {
     h4.innerHTML = "Estadio";
     h5.innerHTML = "Posicion";
     h6.innerHTML = "Capacidad";
-    h7.innerHTML = "Masa Salarial";
 
     thead.appendChild(tr);
     table.appendChild(thead);
@@ -116,7 +114,6 @@ async function generarTabla(result) {
         var cell4 = row.insertCell(3);
         var cell5 = row.insertCell(4);
         var cell6 = row.insertCell(5);
-        var cell7 = row.insertCell(6);
 
         cell1.innerHTML = result[i].nombre;
         cell2.innerHTML = result[i].entrenador;
@@ -124,7 +121,6 @@ async function generarTabla(result) {
         cell4.innerHTML = result[i].estadio;
         cell5.innerHTML = result[i].posicion;
         cell6.innerHTML = result[i].capacidad;
-        cell7.innerHTML = result[i].masaSalarial;
 
         tbody.appendChild(row);
 

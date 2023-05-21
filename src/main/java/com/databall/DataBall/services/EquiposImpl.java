@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -56,8 +55,7 @@ public class EquiposImpl implements Equipos{
                                 rs.getString("presidente"),
                                 rs.getString("estadio"),
                                 rs.getInt("posicion"),
-                                rs.getInt("capacidad"),
-                                rs.getInt("msalarial")
+                                rs.getInt("capacidad")
                         )
         );
     }

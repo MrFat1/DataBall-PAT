@@ -1,5 +1,6 @@
 package com.databall.DataBall;
 
+import com.databall.DataBall.services.MyService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +19,7 @@ public class ControllerTests {
         ResponseEntity<List> response = testRestTemplate.getForEntity("http://localhost:8080/getEquipoSearch/NOMBRE/Real", List.class);
 
         Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
-        Assertions.assertEquals(12, response.getBody().size());
+        Assertions.assertEquals(2, response.getBody().size());
     }
 
     @Test
@@ -26,7 +27,7 @@ public class ControllerTests {
         ResponseEntity<List> response = testRestTemplate.getForEntity("http://localhost:8080/getEquipoSearch/ESTADIO/Real", List.class);
 
         Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
-        Assertions.assertEquals(12, response.getBody().size());
+        Assertions.assertEquals(1, response.getBody().size());
     }
 
     @Test
@@ -44,6 +45,22 @@ public class ControllerTests {
 
         Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
         Assertions.assertEquals(117, response.getBody().size());
+
+    }
+
+    @Test
+    public void checkPerfil() {
+        ResponseEntity<Object> response = testRestTemplate.getForEntity("http://localhost:8080/Perfi", Object.class);
+
+        Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
+
+    }
+
+    @Test
+    public void checkLogin() {
+        ResponseEntity<String> response = testRestTemplate.getForEntity("http://localhost:8080//logg/1234/password", String.class);
+
+        Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
 
     }
 
