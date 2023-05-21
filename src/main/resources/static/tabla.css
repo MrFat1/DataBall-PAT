@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 table {
+=======
+﻿table {
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
 
     opacity: 0.4;
     color: brown;
     background-color:white;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
 }
 table:is(:hover)
 {

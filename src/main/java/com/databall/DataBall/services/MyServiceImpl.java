@@ -78,8 +78,13 @@ public class MyServiceImpl implements MyService {
 		User w=new User();
 		Iterable<User> d=userRepository.findAll();
 		for (User q: d
+<<<<<<< HEAD
 		) {if(q.getUSERID()==id)
 			w=q;
+=======
+			 ) {if(q.getUSERID()==id)
+				 w=q;
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
 		}
 		return w;
 	}

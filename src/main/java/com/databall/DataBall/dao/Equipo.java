@@ -59,9 +59,13 @@ public class Equipo {
     public void setCapacidad(Integer capacidad) {
         this.capacidad = capacidad;
     }
+<<<<<<< HEAD
 
 
     public Equipo(String nombre, String entrenador, String presidente, String estadio, Integer posicion, Integer capacidad) {
+=======
+    public Equipo(String nombre, String entrenador, String presidente, String estadio, Integer posicion, Integer capacidadal) {
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
         this.nombre = nombre;
         this.entrenador = entrenador;
         this.presidente = presidente;
@@ -82,7 +86,11 @@ public class Equipo {
     @Override
     public String toString() {
         return "Equipo [Nombre=" + this.nombre + ", Entrenador=" + this.entrenador + ", Presidente=" + this.presidente + ", Estadio=" + this.estadio + ", Posicion=" + this.posicion
+<<<<<<< HEAD
                 + ", Capacidad=" + this.capacidad + ", Masa Salarial=" + "]";
+=======
+                + ", Capacidad=" + this.capacidad +  "]";
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
     }
 
 }

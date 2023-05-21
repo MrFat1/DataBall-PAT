@@ -59,6 +59,4 @@ public class JugadoresImpl implements Jugadores{
                         )
         );
     }
-
-
 }

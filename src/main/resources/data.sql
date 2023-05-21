@@ -2,6 +2,7 @@ INSERT INTO CUENTA VALUES
 (1,'password');
 INSERT INTO USERS VALUES
 (1,'Juan','Ortiz','1234');
+<<<<<<< HEAD
 
 INSERT INTO EQUIPOS (NOMBRE, ENTRENADOR, PRESIDENTE, ESTADIO, POSICION, CAPACIDAD) VALUES
 ('Almeria', 'Rubi', 'Turki Al-Sheikh', 'Power Horse Stadium', 13, 15200),
@@ -23,6 +24,28 @@ INSERT INTO EQUIPOS (NOMBRE, ENTRENADOR, PRESIDENTE, ESTADIO, POSICION, CAPACIDA
 ('Sevilla', 'Jorge Sampaoli', 'José Castro', 'Ramón Sánchez-Pizjuán', 18, 45500),
 ('Valencia', 'Gennaro Gattuso', 'Layhoon Chan', 'Mestalla', 10, 52000),
 ('Valladolid', 'Pacheta', 'Ronaldo Nazário', 'José Zorrilla', 11, 26000);
+=======
+INSERT INTO EQUIPOS (NOMBRE,ENTRENADOR,PRESIDENTE,POSICION,CAPACIDAD,ESTADIO) VALUES
+('Almeria','Rubi','Turki Al-Sheikh',13,15200,'Power Horse Stadium'),
+('Athletic Club','Ernesto Valverde','Jon Uriarte',6,53000,'San Mamés'),
+('Atletico Madrid','Diego Simeone','Enrique Cerezo',3,68000,'Cívitas Metropolitano'),
+('Barcelona','Xavi Hernandez','Joan Laporta',2,100000,'Spotify Camp Nou'),
+('Betis','Manuel Pellegrini','Ángel Haro',4,60000,'Benito Villamarín'),
+('Cadiz','Sergio González','Manuel Vizcaíno Fernández',19,19500,'Nuevo Mirandilla'),
+('Celta Vigo','Eduardo Coudet','Carlos Mouriño',16,32000,'Abanca-Balaídos'),
+('Elche','Jorge Almirón','Joaquín Buitrago',20,36000,'Estadio Martínez Valero'),
+('Espanyol','Diego Martínez','Chen Yansheng',15,40000,'RCDE Stadium'),
+('Getafe','Quique Sánchez Flores','Ángel Torres',14,17000,'Coliseum Alfonso Pérez'),
+('Girona','Míchel Sánchez','Delfí Geli',17,10000,'Montilivi'),
+('Mallorca','Javier Aguirre','Andy Kohlberg',12,23000,'Visit Mallorca Estadi'),
+('Osasuna','Jagoba Arrasate','Luis Sabalza',7,23500,'El Sadar'),
+('Rayo Vallecano','Andoni Iraola','Raúl Martín Presa',9,14000,'Campo de Fútbol de Vallecas'),
+('Real Madrid','Carlo Ancelotti','Florentino Pérez',1,84000,'Santiago Bernabéu'),
+('Real Sociedad','Imanol Alguacil','Jokin Aperribay',5,32000,'Reale Arena'),
+('Sevilla','Jorge Sampaoli','José Castro',18,45500,'Ramón Sánchez-Pizjuán'),
+('Valencia','Gennaro Gattuso','Layhoon Chan',10,52000,'Mestalla'),
+('Valladolid','Pacheta','Ronaldo Nazário',11,26000,'José Zorrilla');
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
 
 INSERT INTO JUGADORES (NOMBRE,POSICION,EQUIPO,NPARTIDOS,GOLES,ASISTENCIAS,AMARILLAS,ROJAS) VALUES
 ('Marcos Acuña','DF','Sevilla',4,0,0,1,1),

@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.Optional;
 
-import static java.lang.System.out;
-
 @Controller
 
 
@@ -72,7 +70,11 @@ public class UserController {
         return ResponseEntity.ok().body(id);
     }
     @GetMapping(path="/Perfi",produces = MediaType.APPLICATION_JSON_VALUE)
+<<<<<<< HEAD
     public ResponseEntity<Object> a()
+=======
+    public Object a()
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
     {
         if(u==null)
             return ResponseEntity.ok().body(0);
@@ -87,3 +89,7 @@ public class UserController {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8

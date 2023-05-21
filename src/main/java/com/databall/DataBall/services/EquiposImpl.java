@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EquiposImpl implements Equipos{
+public class EquiposImpl implements Equipos {
 
     Logger log = LoggerFactory.getLogger(EquiposImpl.class);
 
@@ -59,5 +59,4 @@ public class EquiposImpl implements Equipos{
                         )
         );
     }
-
 }

@@ -1,5 +1,6 @@
 package com.databall.DataBall.repository;
 
+import com.databall.DataBall.dao.Jugador;
 import com.databall.DataBall.dao.User;
 import com.databall.DataBall.dao.cuenta;
 import org.springframework.data.jdbc.repository.query.Modifying;
@@ -11,7 +12,9 @@ import java.util.Optional;
 
 public interface UserRepository extends CrudRepository<User, Integer> {
     < S extends User > S save(S entity);
+
     < S extends User > Iterable< S> saveAll(Iterable< S> entities);
+<<<<<<< HEAD
     @Query("SELECT * FROM USERS") //Sin parámetros
     List< User> myQuery();
     @Modifying
@@ -22,6 +25,18 @@ public interface UserRepository extends CrudRepository<User, Integer> {
             @Param("lastName") String apellido,
             @Param("email") String email,
             @Param("id") int id);
+=======
+     @Query("SELECT * FROM USERS") //Sin parámetros
+     List< User> myQuery();
+     @Modifying
+     @Query("UPDATE USERS SET " +
+            "FIRST_NAME= :nombre ,EMAIL= :email, LAST_NAME= :lastName WHERE ID= :id")
+     int updateUSERname(
+             @Param("nombre") String nombre,
+             @Param("lastName") String apellido,
+             @Param("email") String email,
+             @Param("id") int id);
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
     @Query("SELECT * FROM USERS WHERE EMAIL = :correo")
     User getUserCorreo(
             @Param("correo") String correo
@@ -38,4 +53,8 @@ public interface UserRepository extends CrudRepository<User, Integer> {
     cuenta getPassword(
             @Param("id") int id
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0273240062754dbe5eebc7022ea6c99c9fc935a8
